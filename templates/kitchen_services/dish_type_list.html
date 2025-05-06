@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_filters %}
+
+{% block title %} Dish Type Delete {% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <!-- Title and Add Button -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Dish Types</h1>
+      <a href="{% url 'kitchen_services:dish-type-create' %}" class="btn btn-primary btn-sm">+ Add Dish Type</a>
+    </div>
+
+    <!-- Search Form -->
+    <form method="get" action="" >
+      <div >
+        {{ search_form|crispy }}
+        <button type="submit" class="btn btn-outline-secondary">
+          <i class="fas fa-search"></i> 🔍
+        </button>
+      </div>
+    </form>
+
+    <!-- Dish Types List -->
+    {% if not dish_type_list %}
+      <div>There are unfortunately no dish types available :(</div>
+    {% else %}
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Dish Type Name</th>
+              <th>Number of Dishes</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for dish_type in dish_type_list %}
+              <tr>
+                <td>{{ dish_type.id }}</td>
+                <td>{{ dish_type.name }}</td>
+                <td>{{ dish_type.dishes.all.count }}</td>
+                <td>
+                  <a href="{% url 'kitchen_services:dish-type-update' pk=dish_type.id %}" class="btn btn-danger btn-sm">Update</a>
+                </td>
+                <td>
+                  <a href="{% url 'kitchen_services:dish-type-delete' pk=dish_type.id %}" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </div>
+
+  {% include 'includes/pagination.html' %}
+{% endblock %}

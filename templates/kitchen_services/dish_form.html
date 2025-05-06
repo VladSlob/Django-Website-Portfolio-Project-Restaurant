@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_filters %}
+
+{% block title %}Dish {{ object|yesno:"Update, Create" }}{% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="display-4">{{ object|yesno:"Update, Create" }} Dish</h1>
+    </div>
+
+    <div class="card p-4 shadow-sm">
+      <form action="" method="post" novalidate>
+        {% csrf_token %}
+        <div class="form-group mb-3">
+          {{ form|crispy }}
+        </div>
+        <div class="form-group d-flex justify-content-between">
+          <a href="{% url 'kitchen_services:dish-list' %}" class="btn btn-outline-secondary btn-lg w-48">Cancel</a>
+
+          <input type="submit" value="Submit" class="btn btn-primary btn-lg w-48">
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

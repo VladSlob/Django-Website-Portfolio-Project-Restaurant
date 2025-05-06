@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Dish Type Delete {% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Delete Dish Type</h1>
+    </div>
+
+    <h4>Are you sure you want to delete the dish type <strong>"{{ dish_type.name }}"</strong>?</h4>
+    <p class="text-muted">This action is permanent and cannot be undone. All dishes related to this dish type will also be deleted.</p>
+
+    <div class="d-flex justify-content-between">
+      <a href="{% url 'kitchen_services:dish-type-list' %}" class="btn btn-outline-secondary btn-lg w-48">Cancel</a>
+
+      <form action="" method="post" class="w-48">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete it" class="btn btn-danger btn-lg w-100">
+      </form>
+    </div>
+  </div>
+{% endblock %}

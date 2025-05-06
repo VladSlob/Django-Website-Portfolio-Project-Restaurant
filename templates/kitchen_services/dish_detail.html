@@ -1,0 +1,38 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dish Detail {% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="display-4">{{ dish.name }} Details</h1>
+      <a href="{% url 'kitchen_services:dish-update' pk=dish.id %}" class="btn btn-secondary">Update</a>
+    </div>
+
+    <div class="card mb-4 p-4">
+      <h3><strong>Price:</strong> ${{ dish.price }}</h3>
+      <h4><strong>Dish Type:</strong> {{ dish.dish_type }}</h4>
+      <p class="lead">{{ dish.description }}</p>
+    </div>
+
+    <h3 class="mt-4 mb-3">Cook{{ dish.cooks.all.count|pluralize }}:</h3>
+    <div class="list-group">
+      {% for cook in dish.cooks.all %}
+        <div class="list-group-item">
+          <h5>{{ cook.first_name }} {{ cook.last_name }}</h5>
+          <p>
+            {% if cook.years_of_experience >= 1 %}
+              with {{ cook.years_of_experience|default:"0" }} year{{ cook.years_of_experience|pluralize }} of experience
+            {% elif cook.years_of_experience == 0 %}
+              <em>- still mastering the basics, but the future looks delicious!</em>
+            {% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="mt-4">
+      <a href="{% url 'kitchen_services:dish-delete' pk=dish.id %}" class="btn btn-danger btn-lg">Delete</a>
+    </div>
+  </div>
+{% endblock %}

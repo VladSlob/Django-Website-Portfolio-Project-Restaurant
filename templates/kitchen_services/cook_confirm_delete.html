@@ -1,1 +1,23 @@
+{% extends "layouts/base.html" %}
 
+{% block title %} Cook Delete {% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Delete Cook</h1>
+    </div>
+
+    <h4>Are you sure you want to delete the cook <strong>"{{ cook.username }}"</strong>?</h4>
+    <p class="text-muted">This action is permanent and cannot be undone. All the associated data for this cook will be deleted.</p>
+
+    <div class="d-flex justify-content-between">
+      <a href="{% url 'kitchen_services:cook-list' %}" class="btn btn-outline-secondary btn-lg w-48">Cancel</a>
+
+      <form action="" method="post" class="w-48">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete the cook" class="btn btn-danger btn-lg w-100">
+      </form>
+    </div>
+  </div>
+{% endblock %}

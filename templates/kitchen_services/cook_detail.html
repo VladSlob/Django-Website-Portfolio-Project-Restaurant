@@ -1,0 +1,47 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Cook Detail {% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <!-- Title and Update Button -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="display-4">Cook {{ cook.username }} Details</h1>
+    </div>
+
+    <!-- Cook Details -->
+    <div class="card mb-4 p-4">
+      <h3><strong>Full Name:</strong> {{ cook.first_name }} {{ cook.last_name }}</h3>
+      <h4><strong>Years of Experience:</strong>
+        {% if not cook.years_of_experience %}
+          Beginner cook
+        {% else %}
+          {{ cook.years_of_experience }} year{{ cook.years_of_experience|pluralize }} -
+          {% if cook.years_of_experience >= 10 %} Highly experienced cook
+          {% elif cook.years_of_experience >= 5 %} Skilled cook
+          {% elif cook.years_of_experience >= 0 %} Beginner cook {% endif %}
+        {% endif %}
+      </h4>
+    </div>
+
+    <!-- Cook's Dishes -->
+    {% if cook.cooked_dishes.count == 0 %}
+      <h5>This cook can't cook anything yet, but they're learning!</h5>
+    {% else %}
+      <p><strong>Number of dishes this cook can prepare:</strong> {{ cook.cooked_dishes.count }}</p>
+      <h3 class="mt-4">Dishes:</h3>
+      <ul class="list-group">
+        {% for dish in cook.cooked_dishes.all %}
+          <li class="list-group-item">
+            <a href="{% url 'kitchen_services:dish-detail' pk=dish.id %}">{{ dish.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!-- Delete Button -->
+    <div class="mt-4">
+      <a href="{% url 'kitchen_services:cook-delete' pk=cook.id %}" class="btn btn-danger btn-lg">Delete</a>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_filters %}
+
+{% block title %} Dish List {% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Dishes</h1>
+      <a href="{% url 'kitchen_services:dish-create' %}" class="btn btn-primary btn-sm">+ Add Dish</a>
+    </div>
+
+    <form method="get" action="" class="form-inline mb-4">
+      <div class="input-group">
+        {{ search_form|crispy }}
+        <button type="submit" class="btn btn-outline-secondary">
+          <i class="fas fa-search"></i> 🔍
+        </button>
+      </div>
+    </form>
+
+    {% if not dish_list %}
+      <div>There are no dishes available, unfortunately :(</div>
+    {% else %}
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Dish Name</th>
+              <th>Dish Type</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for dish in dish_list %}
+              <tr>
+                <td><a style="color: blue" href="{% url 'kitchen_services:dish-detail' pk=dish.id %}">{{ dish.id }}</a></td>
+                <td>{{ dish.name }}</td>
+                <td>{{ dish.dish_type }}</td>
+                <td>${{ dish.price }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </div>
+  {% include 'includes/pagination.html' %}
+{% endblock %}
+

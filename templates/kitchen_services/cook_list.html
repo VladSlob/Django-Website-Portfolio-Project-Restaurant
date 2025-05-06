@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_filters %}
+
+{% block title %} Cook List {% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Our Cooks</h1>
+      <a href="{% url 'kitchen_services:cook-create' %}" class="btn btn-primary btn-sm">+ Add Cook</a>
+    </div>
+
+    <form method="get" action="" >
+      <div >
+        {{ search_form|crispy }}
+        <button type="submit" class="btn btn-outline-secondary">
+          <i class="fas fa-search"></i> 🔍
+        </button>
+      </div>
+    </form>
+
+    {% if not cook_list %}
+      <div>There are no cooks available, unfortunately :(</div>
+    {% else %}
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Username</th>
+              <th>Years of Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for cook in cook_list %}
+              {% if not cook.is_superuser %}
+              <tr>
+                <td><a style="color: blue" href="{% url 'kitchen_services:cook-detail' pk=cook.id %}">{{ cook.id }}</a></td>
+                <td>{{ cook.first_name }} {{ cook.last_name }}</td>
+                <td>{{ cook.username }}</td>
+                <td>{{ cook.years_of_experience|default:"0" }} year{{ cook.years_of_experience|pluralize }} of experience</td>
+              </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </div>
+
+  {% include 'includes/pagination.html' %}
+{% endblock %}
