@@ -1,0 +1,412 @@
+[
+{
+    "model": "kitchen_services.dishtype",
+    "pk": 1,
+    "fields": {
+        "name": "Dessert"
+    }
+},
+{
+    "model": "kitchen_services.dishtype",
+    "pk": 2,
+    "fields": {
+        "name": "Main dish"
+    }
+},
+{
+    "model": "kitchen_services.dishtype",
+    "pk": 3,
+    "fields": {
+        "name": "Appetizer"
+    }
+},
+{
+    "model": "kitchen_services.dishtype",
+    "pk": 4,
+    "fields": {
+        "name": "Soup"
+    }
+},
+{
+    "model": "kitchen_services.dishtype",
+    "pk": 5,
+    "fields": {
+        "name": "Salad"
+    }
+},
+{
+    "model": "kitchen_services.dishtype",
+    "pk": 6,
+    "fields": {
+        "name": "Seafood"
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$7NLUQM9gGKEwsdyURSf0fA$rSalq445eH1ww96KRaDHUqZFGFnHWGZichjr7YfF9G4=",
+        "last_login": "2025-02-18T14:35:58.599Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-02-14T14:45:26.884Z",
+        "years_of_experience": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 2,
+    "fields": {
+        "password": "!tguEDJ5ADWk1hAdHT9jCsTW575gMQwwVs1CdaBMN",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "gordon.ramsay",
+        "first_name": "Gordon",
+        "last_name": "Ramsay",
+        "email": "gordon_ramsay@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-14T15:10:08.258Z",
+        "years_of_experience": 45,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 3,
+    "fields": {
+        "password": "!DHFdcnyi8QgQK3r4YBKFcfu0fRNmODEOxfTsoGWB",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "yevhen.klopotenko",
+        "first_name": "Yevhen",
+        "last_name": "Klopotenko",
+        "email": "yevhen_klopotenko@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-14T15:11:06.456Z",
+        "years_of_experience": 20,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 4,
+    "fields": {
+        "password": "!B3cltsuBI6JEF1MPNOCxz54l5y4P39B03wf8mi6T",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "victoria.black",
+        "first_name": "Victoria",
+        "last_name": "Black",
+        "email": "victoria_black@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-14T15:26:32.250Z",
+        "years_of_experience": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 10,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "bob.white",
+        "first_name": "Bob",
+        "last_name": "White",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-15T15:45:42.833Z",
+        "years_of_experience": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 13,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jeremy_smith",
+        "first_name": "Jeremy",
+        "last_name": "Smith",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-16T08:14:56.223Z",
+        "years_of_experience": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 14,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "emily.carter",
+        "first_name": "Emily",
+        "last_name": "Carter",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-16T08:16:01.751Z",
+        "years_of_experience": 24,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 15,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sofi",
+        "first_name": "Sophia",
+        "last_name": "Brooks",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-16T08:16:27.840Z",
+        "years_of_experience": 16,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.cook",
+    "pk": 16,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "dan2",
+        "first_name": "Daniel",
+        "last_name": "Black",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-02-16T08:16:58.866Z",
+        "years_of_experience": 9,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 2,
+    "fields": {
+        "name": "Borshch",
+        "description": "Borshch is a red beet soup. It is a very popular and widely known dish in Ukrainian cuisine. It is also often eaten in Eastern European countries, such as Romania, Poland, Moldova, Lithuania and others. It contains red beets, carrots, meat or meat stock, onion, potatoes and cabbage. Borshch soup is usually eaten with a piece of black bread, and a dollop of sour cream on top.",
+        "price": "14.99",
+        "dish_type": 4,
+        "cooks": [
+            3
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 3,
+    "fields": {
+        "name": "Varenyky",
+        "description": "Varenyky (also known as pierogi in Polish) are traditional dumplings in Ukrainian cuisine. They are made from a simple dough, typically filled with a variety of ingredients such as mashed potatoes, cottage cheese, mushrooms, or fruits. The dumplings are boiled and are often served with sour cream or melted butter.",
+        "price": "12.99",
+        "dish_type": 2,
+        "cooks": [
+            3
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 4,
+    "fields": {
+        "name": "Beef Wellington",
+        "description": "Beef Wellington is a classic British dish made with a tender beef fillet, typically a center-cut tenderloin, that is coated with a layer of duxelles (a finely chopped mixture of mushrooms, onions, and herbs) and then wrapped in puff pastry. The dish is baked until golden brown and crispy. Often served with a rich red wine sauce or gravy, Beef Wellington is known for its luxurious, savory flavor and impressive presentation, making it a popular choice for special occasions like Christmas and New Year's.",
+        "price": "16.99",
+        "dish_type": 2,
+        "cooks": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 6,
+    "fields": {
+        "name": "Fish and chips",
+        "description": "Fish and chips is a hot dish consisting of battered and fried fish, served with chips. Often considered the national dish of the United Kingdom, fish and chips originated in England in the 19th century. Today, the dish is a common takeaway food in numerous other countries, particularly English-speaking and Commonwealth nations.",
+        "price": "9.99",
+        "dish_type": 2,
+        "cooks": [
+            2,
+            10
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 9,
+    "fields": {
+        "name": "Sushi",
+        "description": "Sushi is one of the first foods that spring to mind when we think about Japanese cuisine. This delicacy was one of the first Japanese dishes to be exported to the US after the Meiji Restoration in 1868, and since then its popularity has steadily increased year after year",
+        "price": "15.99",
+        "dish_type": 6,
+        "cooks": [
+            10
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 10,
+    "fields": {
+        "name": "Ramen",
+        "description": "Ramen is a noodle soup dish consisting of wheat noodles (also known as ’ramen noodles’), a savoury broth (soy sauce, salt, miso, and tonkotsu pork bone are the four main ramen broth bases) and toppings of meat, protein, and/or vegetables such as sliced pork, nori seaweed, spring onions, bamboo shoots, and others.",
+        "price": "11.99",
+        "dish_type": 2,
+        "cooks": [
+            14,
+            15,
+            4,
+            10
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 11,
+    "fields": {
+        "name": "Holubtsi",
+        "description": "Holubtsi are cabbage rolls stuffed with ground meat, rice, and onions, stewed in a tomato sauce, and served with sour cream.",
+        "price": "14.99",
+        "dish_type": 2,
+        "cooks": [
+            3
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 12,
+    "fields": {
+        "name": "Chicken Kyiv",
+        "description": "Chicken Kyiv is a chicken filet fried with a piece of butter and herbs inside. It usually is served with mashed potatoes and vegetable salad.",
+        "price": "15.99",
+        "dish_type": 2,
+        "cooks": [
+            3
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 13,
+    "fields": {
+        "name": "Syrnyky",
+        "description": "Syrnyky are fried curd chees pancakes served with sour cream, jam, honey, or condensed milk. It is typical food for breakfast in Ukraine.",
+        "price": "9.99",
+        "dish_type": 1,
+        "cooks": [
+            3
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 14,
+    "fields": {
+        "name": "Pizza Margherita",
+        "description": "The Pizza Margherita is a true Italian classic, showcasing a thin crust topped with tomato sauce, fresh mozzarella cheese, and aromatic basil leaves – a perfect harmony of flavors.",
+        "price": "14.99",
+        "dish_type": 2,
+        "cooks": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 15,
+    "fields": {
+        "name": "Tacos al Pastor",
+        "description": "These tacos are made in the style of Mexican street food and contain marinated pork, pineapple, onions, and fresh cilantro.",
+        "price": "11.99",
+        "dish_type": 2,
+        "cooks": [
+            2,
+            15,
+            16,
+            13,
+            10
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 16,
+    "fields": {
+        "name": "Kimchi",
+        "description": "Discover the sour, spicy, and umami-rich flavours of fermented cabbage, a staple of Korean cooking that also contains probiotics.",
+        "price": "13.99",
+        "dish_type": 2,
+        "cooks": [
+            14,
+            15,
+            4,
+            10
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 17,
+    "fields": {
+        "name": "Lasagna",
+        "description": "Although lasagna is well-cemented as a staple Italian food option locally and internationally, it owes its first variations to Greek cuisine. Nowadays, the dish has expanded to encompass dozens of styles, with plenty of meat and plant-based versions to appeal to the masses. The standard recipe made with bechamel and meat ragu is thought to come from the Italian region of Emilia-Romagna.",
+        "price": "13.99",
+        "dish_type": 2,
+        "cooks": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "kitchen_services.dish",
+    "pk": 18,
+    "fields": {
+        "name": "Pasta Bolognese",
+        "description": "Pasta Bolognese is a classic Italian dish where al dente pasta meets a hearty ground beef sauce slow-cooked with onions, garlic, and tomatoes. The addition of milk helps tenderize the beef and also adds a note of richness to the flavorful bolognese sauce. It’s a family-friendly dinner everyone will love!",
+        "price": "14.99",
+        "dish_type": 2,
+        "cooks": [
+            4,
+            10
+        ]
+    }
+}
+]
