@@ -7,4 +7,3 @@ You can access the deployed application on Render using the link below:
 
 Username: admin
 Password: QcTwcrq73
-# restaurant-kitchen-service
