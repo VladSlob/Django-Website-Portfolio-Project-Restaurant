@@ -1,0 +1,29 @@
+{#<ul class="sidebar-nav list-group">#}
+{#  {% if user.is_authenticated %}#}
+{#    <li class="list-group-item">#}
+{#      User: {{ user.username }}#}
+{#    </li>#}
+{#    <form method="post" action="{% url 'logout' %}">#}
+{#      {% csrf_token %}#}
+{#      <button class="btn btn-outline-dark" type="submit" >Log out</button>#}
+{#    </form>#}
+{#  {% else %}#}
+{#    <li class="list-group-item">#}
+{#      <a href="{% url 'login' %}">Login</a>#}
+{#    </li>#}
+{#  {% endif %}#}
+{#  <br>#}
+{##}
+{#  <li class="list-group-item">#}
+{#    <a href="{% url 'kitchen_services:index' %}">Home page</a>#}
+{#  </li>#}
+{#  <li class="list-group-item">#}
+{#    <a href="{% url 'kitchen_services:dish-list' %}">All dishes</a>#}
+{#  </li>#}
+{#  <li class="list-group-item">#}
+{#    <a href="{% url 'kitchen_services:dish-type-list' %}">All types of dishes</a>#}
+{#  </li>#}
+{#  <li class="list-group-item">#}
+{#    <a href="{% url 'kitchen_services:cook-list' %}">All cooks</a>#}
+{#  </li>#}
+{#</ul>#}
