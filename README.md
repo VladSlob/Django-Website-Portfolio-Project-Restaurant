@@ -1,1 +1,1 @@
-# Django-Website-Portfolio-Project-Restaurant
+# Django-Website-Portfolio-Project-Restaurant (Vladyslav Slobodian)
