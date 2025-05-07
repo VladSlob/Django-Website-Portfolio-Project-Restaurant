@@ -9,8 +9,6 @@ Username: admin
 
 Password: QcTwcrq73
 
-## Installation
-
 ## Navigate to the project directory
 cd restaurant_kitchen_service
 
