@@ -32,14 +32,15 @@ pip install -r requirements.txt
 python manage.py runserver
 
 DB Structure:
-![img.png](img.png)
+![image](https://github.com/user-attachments/assets/1356335a-ddb7-4f82-935e-20d9feae5b86)
 
+Screenshots:
+![image](https://github.com/user-attachments/assets/3015728e-3324-409f-aa97-346843099224)
+![image](https://github.com/user-attachments/assets/21c2160e-a0d7-44fc-ae39-4f9db1f700fd)
+![image](https://github.com/user-attachments/assets/ded2cc5d-61c0-47f3-8b19-62d953daca1c)
+![image](https://github.com/user-attachments/assets/bc8d3b9a-bab3-4a33-8e1f-c2aeeabd11e0)
+![image](https://github.com/user-attachments/assets/5bd39b24-16c0-49a1-891f-4e42e97fa420)
+![image](https://github.com/user-attachments/assets/7af7ea22-f0a3-491e-a144-4b03fa7ea406)
+![image](https://github.com/user-attachments/assets/2fdd8397-469c-4d9d-b2d7-801b2ad9a54f)
+![image](https://github.com/user-attachments/assets/c93aed2d-cac7-4ccb-8e78-b8fe2653c09a)
 
-![image](https://github.com/user-attachments/assets/c59b60ae-0225-4d6b-aa10-1265e4caff76)
-![image](https://github.com/user-attachments/assets/500a6b5e-2b47-4023-88c5-ec541c9cb1e9)
-![image](https://github.com/user-attachments/assets/9e633906-4c57-43c6-998d-6b4b53a5a3a5)
-![image](https://github.com/user-attachments/assets/050dd777-bb3c-4420-95ae-52ab2d93ba14)
-![image](https://github.com/user-attachments/assets/f8b80cfe-6edf-410e-b9d3-b401c3fb3d93)
-![image](https://github.com/user-attachments/assets/9946147f-4d67-4023-a466-407f96942b5c)
-![image](https://github.com/user-attachments/assets/e36336c0-d94c-4b9e-87e9-09e76d5abb9a)
-![image](https://github.com/user-attachments/assets/a1335578-6ebe-47fe-86e3-9152b4ec01f6)
