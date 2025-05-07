@@ -32,6 +32,7 @@ pip install -r requirements.txt
 python manage.py runserver
 
 DB Structure:
+
 ![image](https://github.com/user-attachments/assets/1356335a-ddb7-4f82-935e-20d9feae5b86)
 
 Screenshots:
