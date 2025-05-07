@@ -9,9 +9,6 @@ Username: admin
 
 Password: QcTwcrq73
 
-## Navigate to the project directory
-cd restaurant_kitchen_service
-
 ## Create a virtual environment
 python3 -m venv venv
 
